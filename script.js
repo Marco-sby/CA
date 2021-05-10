@@ -20,7 +20,7 @@ function getData(){
                             <div class="card mt-4 bg-light">
                                 <ul class="list- group">
                                     <li class="list-group-item"><h2>Name: ${lists.name.first}</h2></li>
-                                    <li class="list-group-item"><image src = ${lists.picture.large}></image></li>
+                                    <li class="list-group-item"><image src = ${lists.picture.small}></image></li>
                                     <li class="list-group-item">Phone Number: ${lists.cell}</li>
                                     <li class="list-group-item">DOB: ${lists.dob.date}</li>
                                     <li class="list-group-item">Age: ${lists.dob.age}</li>
