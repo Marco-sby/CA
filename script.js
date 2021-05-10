@@ -17,7 +17,7 @@ function getData(){
             author.forEach(function (lists){
                 output +=`
                     <div class="container">
-                            <div class="card mt-4 bg-light">
+                            <div class="card mt-1 bg-light">
                                 <ul class="list- group">
                                     <li class="list-group-item"><h2>Name: ${lists.name.first}</h2></li>
                                     <li class="list-group-item"><image src = ${lists.picture.large}></image></li>
