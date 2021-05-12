@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Overbill</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+        
+        table {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 12px;
+            width: 400px;
+        }
+
+        table th {background-color: hsl(345, 33%, 45%); }
+        td.total {background-color: lightgrey; }
+        .right {text-align: right; }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        <tr>
+            <td>Startes</td>
+            <td>
+                <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="100"/></td>
+            <td>€100</td>
+        </tr>
+        <tr>
+            <td>Main</td>
+            <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="50"/></td>
+            <td>€50</td>
+        </tr>
+        <tr>
+            <td>Dessert</td>
+            <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="30"/></td>
+            <td>€30</td>
+        </tr>
+        <tr>
+            <td>Drinks</td>
+            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+            <td>€24</td>
+        </tr>
+        <tr>
+            <td>No vegetarian</td>
+            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+            <td>€24</td>
+        </tr>
+        <tr>
+            <td>vegetarian</td>
+            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+            <td>€24</td>
+        </tr>
+        <tr>
+            <td class="total">&nbsp;</td>
+            <td class="total right"><strong>Total:</strong></td>
+            <td class="total"><strong>
+                    <div id="ItemsTotal">€0</div>
+                </strong></td>
+        </tr>
+        <script>
+            var total_items = 6;
+    
+            function CalculateItemsValue(){
+                var total = 0;
+    
+                for (let i = 1; i <= total_items; i++) {
+                   itemID =document.getElementById("qnt_" + i);
+                   total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+                    
+                }
+                document.getElementById('ItemsTotal').innerHTML = "€" + total;
+            }
+    
+            document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+                item.addEventListener('keyup', CalculateItemsValue);
+            });
+    
+        </script>
+    </body>
+    
+    </html>
+    </table>
