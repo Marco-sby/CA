@@ -9,70 +9,143 @@
     <style>
         table, th, td {
             border: 1px solid black;
-
         }
-
+            
         th, td {
             padding: 5px;
         }
         
         table {
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 12px;
-            width: 400px;
+            color: #ff9505;
+            font-family: Verdana, Geneva, sans-serif ,;
+            font-size: 20px ;
+            width: 800px;
             margin: auto;
-            
-            
+            background-color: white;   
         }
 
-        table th {background-color: hsl(345, 33%, 45%); }
-        td.total {background-color: lightgrey; }
-        .right {text-align: right; }
+        body{
+            background-color: black;
 
-        .container{
-            margin: auto;
         }
+
+       table th {background-color:  hsl(0, 0%, 100%); }
+        td.total {background-color: grey (160, 100%, 75%) (0, 0%, 83%); }
+        .right {text-align: right;}
+         
     </style>
 
 </head>
 
 <body>
-    <table >
+    <table>
+    
         <tr>
             <th>Description</th>
             <th>Quantity</th>
             <th>Price</th>
-        <tr>
+     
+         <tr>
             <td>Startes</td>
+            <td></td>
+            <td></td>
+         </tr>   
+        <tr>
+            <td >Banana Bread</td>
             <td>
                 <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="100"/></td>
-            <td>€100</td>
+            <td>€20.00</td>
         </tr>
         <tr>
-            <td>Main</td>
+            <td>Breadfast Sandwich</td>
             <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="50"/></td>
-            <td>€50</td>
+            <td>€10.00</td>
         </tr>
         <tr>
-            <td>Dessert</td>
+            <td>lacto-Ovos vegetarian</td>
             <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="30"/></td>
-            <td>€30</td>
+            <td>€20.00</td>
         </tr>
         <tr>
-            <td>Drinks</td>
+            <td>Pesco-vegetarian</td>
             <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
-            <td>€24</td>
+            <td>€24.00</td>
         </tr>
         <tr>
-            <td>No vegetarian</td>
+            <td>Barbecue</td>
             <td><input name="qnt_4" type="text" id="qnt_5" value="0" size="3" data-price="24"/></td>
-            <td>€24</td>
+            <td>€20.00</td>
         </tr>
         <tr>
-            <td>vegetarian</td>
+            <td>Brunch Skillet</td>
             <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
-            <td>€24</td>
+            <td>€18.00</td>
         </tr>
+    </tr>
+    <tr>
+        <td>French fries</td>
+        <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+        <td>€9.00</td>
+    </tr>
+    </tr>
+        <tr>
+            <td>Brunch Skillet</td>
+            <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+            <td>€18</td>
+        </tr>
+    </tr>
+    <tr>
+        <td>Cheese Pizza</td>
+        <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+        <td>€15.00</td>
+    </tr>
+</tr>
+<tr>
+    <td>Iceam cream</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€8.00</td>
+</tr>
+<tr>
+    <td>Cake</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€5.00</td>
+</tr>
+<tr>
+    <td>Pastry</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€14.00</td>
+</tr>
+</tr>
+<tr>
+    <td>Candy</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€4</td>
+</tr>
+</tr>
+<tr>
+    <td>Ice Tea</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€5.00</td>
+</tr>
+</tr>
+<tr>
+    <td>Beer</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€8.00</td>
+</tr>
+</tr>
+<tr>
+    <td>Juice</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€4.00</td>
+</tr>
+</tr>
+<tr>
+    <td>Coke</td>
+    <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
+    <td>€5.00</td>
+</tr>
+
         <tr>
             <td class="total">&nbsp;</td>
             <td class="total right"><strong>Total:</strong></td>
@@ -82,7 +155,7 @@
         </tr>
         <tr>
             <td class="total">&nbsp;</td>
-            <td class="total left"><strong>Total:</strong></td>
+            <td class="total right"><strong>Total:</strong></td>
             <td class="total"><strong>
                     <div id="ItemsTotal">€0</div>
                 </strong></td>
