@@ -9,6 +9,7 @@
     <style>
         table, th, td {
             border: 1px solid black;
+
         }
 
         th, td {
@@ -19,17 +20,24 @@
             font-family: Verdana, Geneva, sans-serif;
             font-size: 12px;
             width: 400px;
+            margin: auto;
+            
+            
         }
 
         table th {background-color: hsl(345, 33%, 45%); }
         td.total {background-color: lightgrey; }
         .right {text-align: right; }
+
+        .container{
+            margin: auto;
+        }
     </style>
 
 </head>
 
 <body>
-    <table>
+    <table >
         <tr>
             <th>Description</th>
             <th>Quantity</th>
@@ -57,17 +65,24 @@
         </tr>
         <tr>
             <td>No vegetarian</td>
-            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+            <td><input name="qnt_4" type="text" id="qnt_5" value="0" size="3" data-price="24"/></td>
             <td>€24</td>
         </tr>
         <tr>
             <td>vegetarian</td>
-            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="24"/></td>
+            <td><input name="qnt_4" type="text" id="qnt_6" value="0" size="3" data-price="24"/></td>
             <td>€24</td>
         </tr>
         <tr>
             <td class="total">&nbsp;</td>
             <td class="total right"><strong>Total:</strong></td>
+            <td class="total"><strong>
+                    <div id="ItemsTotal">€0</div>
+                </strong></td>
+        </tr>
+        <tr>
+            <td class="total">&nbsp;</td>
+            <td class="total left"><strong>Total:</strong></td>
             <td class="total"><strong>
                     <div id="ItemsTotal">€0</div>
                 </strong></td>
