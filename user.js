@@ -1,4 +1,3 @@
-// get
 document.getElementById('myBtn').addEventListener('click' ,getData);
 
 function getData(){
@@ -16,10 +15,10 @@ function getData(){
         // get data loop through
             author.forEach(function (lists){
                 output +=`
-                    <div class="container">
-                            <div class="card mt-1 bg-light">
+                    <div class="container-left">
+                            <div class="card mt-10 bg-light">
                                 <ul class="list- group">
-                                    <li class="list-group-item"><h2>Name: ${lists.name.first}</h2></li>
+                                    <li class="list-group-item"><h2><Strong>Name<Strong>: ${lists.name.first}</h2></li>
                                     <li class="list-group-item"><image src = ${lists.picture.large}></image></li>
                                     <li class="list-group-item">Phone Number: ${lists.cell}</li>
                                     <li class="list-group-item">DOB: ${lists.dob.date}</li>

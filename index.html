@@ -1,51 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---test navbar with user generator random-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <!-- nav bar-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="pass.css">
-    
-    <title>Testca</title>
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!---test navbar with user generator random-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- nav bar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylemenu.css">
+  <style> 
+  body{
+      background-color: white;
+  }
+  .nav-link{
+      position: relative;
+  }
+  .btn-primary{
+      background-color:#ff7720 ;
+  }
+
+ </style>
+  <title>Assignment 03</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><b>HTML</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="HTML">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <div class=" nav-container">
-              <button class="primary " id="myBtn">Special Customer</button>
-          </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pag02.html">Best dishes</a><!--This links go to second page!-->
-          </li>
-        </ul>
+ <body>
+    <!--
+         The following lines of code lines 31 to 47 has been sourced from https://getbootstrap.com/docs/5.0/components/navs-tabs/
+         -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="HTML">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="nav-container">
+                <button  type ="button"class="btn btn-primary btn-sm" id="myBtn">Special Customer</button>   
+            </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pag02.html"><Strong>Click here and look at our special meals</Strong></a><!--This links go to second page!-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Marco-sby/CA"><Strong>Github repository</Strong></a><!--This links go to second page!-->
+              </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  
-  </nav>
-  <div id="output"></div>
     
+    </nav>
+    <div id="output"></div>
+      
+    <!-- the 56 to 142 prints the menus-->
     <div class="wrapper">
         <div class="title">
-            <h4><span>fresh food for good health</span>our menu</h4>
+            <h4><span>Napolitano Restaurant</span>menu</h4>
         </div>
         <div class="menu">
             <div class="single-menu">
                 <div class="menu-content">
-                    <H2>Startes</H2>
+                    <H2>Starters</H2>
                     <h4>Smoked salmon with prawns<span>&#8364;15.00</span></h4>
                     <p>This stunning starter can be assembled ahead, then topped with dressed leaves just before serving.</p>
                 </div>
@@ -124,73 +140,225 @@
             </div>
         </div>
     </div>
-    <div class="main">
-
-      <div class="container">
-  
-  
-        <div class="row">
-          <div class="col-12">
-            <form action="#">
-  
-              <h1>Staff password
-                <hr>
-              </h1>
-  
-              <div class="form-group">
-                <label for="usrname">Username</label>
-                <input type="text" class="form-control" id="usrname" name="usrname" required>
-  
-              </div>
-              <div class="form-group">
-                <label for="psw">Password</label>
-                <input type="password" class="form-control" id="psw" name="psw"
-                  pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                  title="Must Contain at least one number one uppercase and lowercase letter, and at least 8 or more characters"
-                  required>
-  
-                <span toggle="#psw" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-              </div>
-  
-              <button type="submit" value="submit" class="btn btn-submit">Submit</button>
-            </form>
-  
-  
-            <div id="validation_box">
-  
-              <h4>Password Must Contain The Following</h4>
-  
-              <p id="letter" class="invalid">Lowercase Letters</p>
-              <p id="capital" class="invalid">Uppercase Letters</p>
-              <p id="number" class="invalid">A Number</p>
-              <p id="length" class="invalid">Atleast 8 Characters</p>
-  
-            </div>
-  
-          </div>
-        </div>
-  
-      </div>
-  
-  
-    </div>
-  
+      <!---The lines 145 to 229 prints all items,quantity and prices-->
+    <table>
     
+      <tr>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <tr>
+              <td class="dishes">Startes</td>
+              <td class="dishes"></td>
+              <td class="dishes"></td>
+          </tr>    
+              <td>Smoked Salmon</td>
+              <td>
+                  <input name="qnt_1" type="text" id="qnt_1" class="starter" value="0" size="3" data-price="15.00"/></td>
+              <td>€15.00</td>
+          </tr>
+          <tr>
+              <td>Grilled Losbster</td>
+              <td><input name="qnt_2" type="text" id="qnt_2" class="starter" value="0" size="3" data-price="50.00"/></td>
+              <td>€50.00</td>
+          </tr>
+          <tr>
+              <td>Broccoli & Potato(vegetarian)</td>
+              <td><input name="qnt_3" type="text" id="qnt_3" class="Starter" value="0" size="3" data-price="25.00"/></td>
+              <td>€25.00</td>
+          </tr>
+          <tr>
+              <td class="dishes">Main</td>
+              <td class="dishes"></td>
+              <td class="dishes"></td>
+          </tr>
+          <tr>    
+              <td>Potted Crab</td>
+              <td><input name="qnt_4" type="text" id="qnt_4" class="dishes-main" value="0" size="3" data-price="25.00"/></td>
+              <td>€25.00</td>
+              
+          </tr>
+          <tr>    
+              <td>ham Hock</td>
+              <td><input name="qnt_5" type="text" id="qnt_5" class="dishes-main" value="0" size="3" data-price="25.00"/></td>
+              <td>€18.00</td>
+          </tr>
+          <tr>    
+              <td>Tomatto with Burrata(vegetarian)</td>
+              <td><input name="qnt_6" type="text" id="qnt_6" class="dishes-main" value="0" size="3" data-price="25.00"/></td>
+              <td>€26.00</td>
+          </tr>
+          <tr>
+              <td class="dishes"   >Dessert</td>
+              <td class="dishes"></td>
+              <td class="dishes"></td>
+          </tr>
+          <tr>    
+              <td>Raspberry</td>
+              <td><input name="qnt_7" type="text" id="qnt_7" class="Dessert" value="0" size="3" data-price="12.00"/></td>
+              <td>€12.00</td>
+          </tr>
+          <tr>
+              <td>Lemon Cake</td>
+              <td><input name="qnt_8" type="text" id="qnt_8" class="Dessert" value="0" size="3" data-price="8.00"/></td>
+              <td>€8.00</td>
+          </tr>
+              <td>Blueberry</td>
+              <td><input name="qnt_9" type="text" id="qnt_9" class="Dessert" value="0" size="3" data-price="12.00"/></td>
+              <td>€14.00</td> 
+          </tr>
+          <tr>
+              <td class="dishes">Drinks</td>
+              <td class="dishes"></td>
+              <td class="dishes" ></td>
+          </tr> 
+          <tr>
+              <td>Passion</td>
+              <td><input name="qnt_10" type="text" id="qnt_10" class="Drinks" value="0" size="3" data-price="10.00"/></td>
+              <td>€10.00</td> 
+          </tr>
+          <tr>
+              <td>Margarita</td>
+              <td><input name="qnt_11" type="text" id="qnt_11" class="Drinks" value="0" size="3" data-price="12.00"/></td>
+              <td>€15.00</td> 
+          </tr>
+          <tr>
+              <td>Coffee</td>
+              <td><input name="qnt_12" type="text" id="qnt_12" class="Drinks" value="0" size="3" data-price="8.00"/></td>
+              <td>€8.00</td> 
+          </tr>
+          <!-- the lines 230 to 265 print all totals-->
+      <tr>
+          <td class="total"><strong>Total:</strong></td>
+          <td class="total right"></td>
+          <td class="total"><strong>
+                  <div id="ItemsTotal">€0.00</div>
+              </strong></td>
+      </tr>
+      <tr>
+          <td class="total"><strong>Total Starter:</strong></td>
+          <td class="total right"></td>
+          <td class="total"><strong>
+                  <div id="ItemsTotal">€0.00</div>
+              </strong></td>
+      </tr>
+      <tr>
+        <td class="total"><strong>Total main:</strong></td>
+        <td class="total right"></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0.00</div>
+            </strong></td>
+    </tr>
+    <tr>
+        <td class="total"><strong>Total Dessert:</strong></td>
+        <td class="total right"></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0.00</div>
+            </strong></td>
+    </tr>
+    <tr>
+        <td class="total"><strong>Total Drinks:</strong></td>
+        <td class="total right"></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0.00</div>
+            </strong></td>
+    </tr>
+    
+      <script>
+    
+        //The following lines of code lines 272 to 296 has been sourced from https://github.com/snelbops/Sandbox/blob/main/Week%2013/table.html
+          var total_items = 12;
+          var total_main= 3;               //It work only total,I really try but couldn't!
+         
+          function CalculateItemsValue(){
+              var total = 0;
+              var mainTotal = 0;
   
+              for (let i = 1; i <= total_items; i++) {
+                 itemID =document.getElementById("qnt_" + i);
+                  console.log(itemID);
+                  console.log(itemID.className);
+                  if(itemID.className=="starter"){
+                  total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+                  };
+                 if(itemID.className=="dishes-main"){
+                 maintotal = mainTotal + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+                  };
+              }
+              document.getElementById('ItemsTotal').innerHTML = "€" + total;
+              document.getElementById('dishesTotal').innerHTML = "$" + maintotal;
+          }
   
+          document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+              item.addEventListener('keyup', CalculateItemsValue);
+          });
   
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="pass.js"></script>
-    <script src="script.js"></script>
+      </script>
+  </table>
+  
+
+  <div class="main">
+
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-12">
+          <form action="#">
+
+            <h1>Login </h1>
+
+            <div class="form-group">
+              <label for="usrname"><strong> Username <strong></label>
+              <input type="text" class="form-control" id="usrname" name="usrname" required>
+
+            </div>
+            <div class="form-group">
+              <label for="psw">Password</label>
+              <input type="password" class="form-control" id="psw" name="psw"
+                pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must Contain at least one number one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+
+              <span toggle="#psw" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+
+            <button type="submit" value="submit" class="btn btn-submit">Submit</button>
+          </form>
+
+
+          <div id="validation_box">
+
+            <h4>Password Must Contain The Following</h4>
+
+            <p id="letter" class="invalid">Lowercase Letters</p>
+            <p id="capital" class="invalid">Uppercase Letters</p>
+            <p id="number" class="invalid">A Number</p>
+            <p id="length" class="invalid">Atleast 8 Characters</p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+</div>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script>
+  <script src="user.js"></script>
+  
+
 </body>
+
 </html>

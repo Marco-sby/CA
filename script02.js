@@ -2,7 +2,7 @@ const menuBtns = document.querySelectorAll('.menu-btn');
 const foodItems = document.querySelectorAll('.food-item');
 
 let activeBtn = "startes";
-
+                             // The some codes of  this files were based from https:https://www.w3schools.com/
 showFoodMenu(activeBtn);
 
 menuBtns.forEach((btn) => {

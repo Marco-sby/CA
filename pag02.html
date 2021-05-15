@@ -11,16 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
       
   </head>
   <body>
-
+    <!--
+         The following lines of code lines 33 to 43 has been sourced from https://getbootstrap.com/docs/5.0/components/navs-tabs/
+         -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="HTML">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+            </li>
     <section class = "menu">
       <div class = "menu-container">
         <div class = "menu-head">
           <h2>Special Food Menu</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium porro tempora aliquid officiis voluptate necessitatibus minus obcaecati. Quod perferendis numquam dignissimos odio nobis asperiores!</p>
+          <p>Explore new cuisines, diets and crowd-pleasing spreads with all our favourite dishes.Click in the buttons belong to find our the best dishers and drinks.</p>
         </div>
 
         <div class = "menu-btns">
@@ -39,7 +54,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Banana Bread With Butter & Milk</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$25.00</h3>
+              <h3 class = "food-price">€25.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -61,7 +76,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Barbecue</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$20.00</h3>
+              <h3 class = "food-price">€20.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -82,7 +97,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Ice cream</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$8.00</h3>
+              <h3 class = "food-price">€8.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -98,12 +113,12 @@
           <!-- item -->
           <div class = "food-item Drinks">
             <div class = "food-img">
-              <img src = "Image/iced-tea.jpg"food image">
+              <img src = "Image/iced-tea.jpg" alt="food image">
             </div>
             <div class = "food-content">
               <h2 class = "food-name">Ice tea</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$5.00</h3>
+              <h3 class = "food-price">€5.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -124,7 +139,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Breadfast Sandwich</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$15.00</h3>
+              <h3 class = "food-price">€15.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -145,7 +160,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Brunch Skillet</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$10.00</h3>
+              <h3 class = "food-price">€10.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -166,7 +181,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Cake</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$5.00</h3>
+              <h3 class = "food-price">€5.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -187,7 +202,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Beer</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$8.00</h3>
+              <h3 class = "food-price">€8.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -208,7 +223,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Lact-ovos vegetarian</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$15.00</h3>
+              <h3 class = "food-price">€15.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -229,7 +244,7 @@
             <div class = "food-content">
               <h2 class = "food-name">French Fries</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$9.00</h3>
+              <h3 class = "food-price">€9.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -250,7 +265,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Pastry</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$10.00</h3>
+              <h3 class = "food-price">€10.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -271,7 +286,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Juice</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$4.00</h3>
+              <h3 class = "food-price">€4.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -292,7 +307,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Pesco-vegetarian</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$5.00</h3>
+              <h3 class = "food-price">€5.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -313,7 +328,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Cheese Pizza</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$12.00</h3>
+              <h3 class = "food-price">€12.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -334,7 +349,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Candy</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$4.00</h3>
+              <h3 class = "food-price">€4.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>
@@ -355,7 +370,7 @@
             <div class = "food-content">
               <h2 class = "food-name">Coke</h2>
               <div class = "line"></div>
-              <h3 class = "food-price">$5.00</h3>
+              <h3 class = "food-price">€5.00</h3>
               <ul class = "rating">
                 <li><i class = "fas fa-star"></i></li>
                 <li><i class = "fas fa-star"></i></li>

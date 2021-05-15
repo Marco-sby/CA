@@ -34,14 +34,15 @@ h2{
 }
 .title h4 span{
   display:block;
-  font-size:18px;
+  font-size:50px;
   font-style:italic;
   margin-bottom:10px;
+  color:#ff7720 ;
 }
 .title h4:before{
   position:absolute;
   content:"";
-  width:100px;
+  width:150px;
   height:2px;
   background-color:#ff7720;
   bottom:0;
@@ -82,4 +83,18 @@ h2{
   color:#ff7720;
   font-style:italic;
 }
+th, td {
+    padding: 5px;
+}
 
+table {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+}
+
+table th {background-color:lightgrey ; }
+td.total {background-color:#ff7720; font-family:cursive; }
+td.dishes{font-family: cursive; background-color: #ff7720;}
+.right {text-align: right; }

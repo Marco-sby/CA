@@ -13,7 +13,7 @@
 body{
     line-height: 1.5;
     font-family: var(--Mont);
-    background-color:#000000;
+    background-color:white;
     color: #fff;
 }
 .menu{
@@ -30,6 +30,7 @@ img{
 }
 .menu-head{
     text-align: center;
+    color: #ff9505;
 }
 .menu-head h2{
     font-family: var(--Kaushan);
@@ -38,6 +39,7 @@ img{
 .menu-head p{
     font-weight: 300;
     padding: 1.8rem 0;
+    color: black;
 }
 .menu-btns{
     padding: 0.6rem 0;
@@ -76,7 +78,7 @@ img{
     opacity: 0.8;
 }
 .active-btn{
-    color: #fff;
+    color:black;
 }
 .food-items{
     margin: 2rem 0;
@@ -128,7 +130,7 @@ img{
 }
 .rating .fa-star{
     margin-right: 0.4rem;
-    color: #44355b;
+    color: #0b090e;
 }
 .category{
     padding-top: 0.2rem;
