@@ -4,46 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---test navbar with user generator random-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- nav bar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="pass.css">
     
     <title>Testca</title>
     
 </head>
 <body>
-    <div class="center">
-        <div class="form">
-          <div class="form-element">
-            <input type="password" id="password-field">
-            <div class="toggle-password">
-              <i class="fa fa-eye"></i>
-              <i class="fa fa-eye-slash"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>HTML</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="HTML">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class=" nav-container">
+              <button class="primary " id="myBtn">Special Customer</button>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pag02.html">Best dishes</a><!--This links go to second page!-->
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+  </nav>
+  <div id="output"></div>
+    
+    <div class="wrapper">
+        <div class="title">
+            <h4><span>fresh food for good health</span>our menu</h4>
+        </div>
+        <div class="menu">
+            <div class="single-menu">
+                <div class="menu-content">
+                    <H2>Startes</H2>
+                    <h4>Smoked salmon with prawns<span>&#8364;15.00</span></h4>
+                    <p>This stunning starter can be assembled ahead, then topped with dressed leaves just before serving.</p>
+                </div>
             </div>
-            <div class="password-policies">
-              <div class="policy-length">
-                8 Characters
-              </div>
-              <div class="policy-number">
-                Contains Number
-              </div>
-              <div class="policy-uppercase">
-                Contains Uppercase
-              </div>
-              <div class="policy-special">
-                Contains Special Characters
-              </div>
+            <div class="single-menu">
+                
+                <div class="menu-content">
+                    <h2>Main</h2>
+                    <h4>Potted crab <span>&#8364;35.00</span></h4>
+                    <p>Rustle up Tom Kerridge's crab starter with a hint of smoked paprika for your next dinner party. You can make it ahead, leaving you time to sit down and enjoy</p>
+                </div>
             </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Grilled Losbster<span>&#8364;50,00</span></h4>
+                    <p>Treat guests to grilled lobster tails served with a lemon, garlic and parsley butter. They take a little effort, but make an impressive dinner party dish.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Ham Hock<span>&#8364;18,00</span></h4>
+                    <p>If you're looking for a Christmas classic with a twist, this French ham hock and pistachio terrine, transformed into a modern make-ahead starter is for you.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+
+                <div class="menu-content">
+                    
+                    <h4>Broccoli & potato (vegetarian)<span>&#8364;25,00</span></h4>
+                    <p>These crunchy croquettes are both a stealthy way to get more vegetables into your kids as well as a great vegetarian party nibble</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Tomato with burrata (vegetarian)<span>&#8364;26.00</span></h4>
+                    <p>Chop up tomatoes, toss with salt, top with creamy burrata and slather with a broad bean-flecked salsa verde to make this simple yet super-tasty salad.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h2>Dessert</h2>
+                    <h4>Raspberry<span>&#8364;12.00</span></h4>
+                    <p>Though a beloved pie classic, rhubarb has a strong tartness that sometimes needs moderating.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h2>Drinks</h2>
+                    <h4>Passion<span>&#8364;10.00</span></h4>
+                    <p>This easy passion fruit cocktail is bursting with zingy flavours and is perfect for celebrating with friends</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Lemon Cake<span>&#8364;8.00</span></h4>
+                    <p>This is a namesake because the recipe developer’s mom baked it for his birthday every year.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Margarita<span>&#8364;15.00</span></h4>
+                    <p>When the warm weather rolls around, treat yourself and a few friends to a tasty pitcher of margaritas.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Blueberry<span>&#8364;14.00</span></h4>
+                    <p>Our Blueberry-Peach Cobbler is like a blueberry muffin canoodling with fresh peaches. </p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <div class="menu-content">
+                    <h4>Coffee<span>&#8364;8.00</span></h4>
+                    <p>Whether you're looking for an upgrade from supermarket beans or searching for unique, global options,the best coffee subscription boxes on the market.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+      <div class="container">
+  
+  
+        <div class="row">
+          <div class="col-12">
+            <form action="#">
+  
+              <h1>Staff password
+                <hr>
+              </h1>
+  
+              <div class="form-group">
+                <label for="usrname">Username</label>
+                <input type="text" class="form-control" id="usrname" name="usrname" required>
+  
+              </div>
+              <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" id="psw" name="psw"
+                  pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must Contain at least one number one uppercase and lowercase letter, and at least 8 or more characters"
+                  required>
+  
+                <span toggle="#psw" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              </div>
+  
+              <button type="submit" value="submit" class="btn btn-submit">Submit</button>
+            </form>
+  
+  
+            <div id="validation_box">
+  
+              <h4>Password Must Contain The Following</h4>
+  
+              <p id="letter" class="invalid">Lowercase Letters</p>
+              <p id="capital" class="invalid">Uppercase Letters</p>
+              <p id="number" class="invalid">A Number</p>
+              <p id="length" class="invalid">Atleast 8 Characters</p>
+  
+            </div>
+  
           </div>
         </div>
+  
       </div>
-    
-    <div class="container">
-        <h1 class="display-4mt-3">Test</h1>
-        <button class="primary " id="myBtn">Customer</button>
+  
+  
     </div>
-    <div id="output"></div>
+  
+    
+  
+  
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-
-     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="pass.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
