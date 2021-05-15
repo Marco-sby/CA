@@ -229,27 +229,20 @@
           </tr>
           <!-- the lines 230 to 265 print all totals-->
       <tr>
-          <td class="total"><strong>Total:</strong></td>
+          <td class="total"><strong>Total Starters:</strong></td>
           <td class="total right"></td>
           <td class="total"><strong>
                   <div id="ItemsTotal">€0.00</div>
               </strong></td>
       </tr>
       <tr>
-          <td class="total"><strong>Total Starter:</strong></td>
+          <td class="total"><strong>Total Main:</strong></td>
           <td class="total right"></td>
           <td class="total"><strong>
                   <div id="ItemsTotal">€0.00</div>
               </strong></td>
       </tr>
       <tr>
-        <td class="total"><strong>Total main:</strong></td>
-        <td class="total right"></td>
-        <td class="total"><strong>
-                <div id="ItemsTotal">€0.00</div>
-            </strong></td>
-    </tr>
-    <tr>
         <td class="total"><strong>Total Dessert:</strong></td>
         <td class="total right"></td>
         <td class="total"><strong>
@@ -263,16 +256,23 @@
                 <div id="ItemsTotal">€0.00</div>
             </strong></td>
     </tr>
+    <tr>
+        <td class="total"><strong>Total:</strong></td>
+        <td class="total right"></td>
+        <td class="total"><strong>
+                <div id="ItemsTotal">€0.00</div>
+            </strong></td>
+    </tr>
     
       <script>
     
         //The following lines of code lines 272 to 296 has been sourced from https://github.com/snelbops/Sandbox/blob/main/Week%2013/table.html
           var total_items = 12;
-          var total_main= 3;               //It work only total,I really try but couldn't!
+         // var total_main= 3;               //It work only total starters,I really try but couldn't!
          
           function CalculateItemsValue(){
               var total = 0;
-              var mainTotal = 0;
+             // var mainTotal = 0;
   
               for (let i = 1; i <= total_items; i++) {
                  itemID =document.getElementById("qnt_" + i);
@@ -280,13 +280,13 @@
                   console.log(itemID.className);
                   if(itemID.className=="starter"){
                   total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
-                  };
-                 if(itemID.className=="dishes-main"){
-                 maintotal = mainTotal + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+                  
+                // if(itemID.className=="dishes-main"){
+                // maintotal = mainTotal + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
                   };
               }
               document.getElementById('ItemsTotal').innerHTML = "€" + total;
-              document.getElementById('dishesTotal').innerHTML = "$" + maintotal;
+            //  document.getElementById('dishesTotal').innerHTML = "$" + maintotal;
           }
   
           document.querySelectorAll('[id^="qnt_"]').forEach(item => {
